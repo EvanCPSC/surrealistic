@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <script src="hbuttonscript.js"></script>
+    <title>h button - surrealistic</title>
+    <meta content="surreals site" property="og:title">
+  	<meta content="when the surreal is real" property="og:description">
+		<meta content="https://surrealistic.w3spaces.com/" property="og:url">
+		<meta content="#e6005c" data-react-helmet="true" name="theme-color">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <link rel="preconnect" href="https://fonts.gstatic.com">
+	  <link href="https://fonts.googleapis.com/css2?family=Potta+One&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.png" type="image/png" sizes="any">
+    
+    <style>
+
+    body { background-color: #696969;
+		    font-family: 'Potta One', cursive;
+		    text-align: center;
+        background-position: center;
+        background-repeat: no-repeat;
+        transition: 0.3s;
+        -webkit-transition: 0.3s;
+        }
+    #home { background-color: #e60073;
+		    border-radius: 8px;
+		    font-size: 20px;
+		    padding: 5px;
+		    font-family: 'Potta One', cursive;
+        transition: 0.3s;
+        -webkit-transition: 0.3s;
+		    }
+    #home:hover { 
+		    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.3);
+		    }
+    #themes { background-color: #e60073;
+		    border-radius: 8px;
+		    font-size: 20px;
+		    padding: 5px;
+		    font-family: 'Potta One', cursive;
+        transition: 0.3s;
+        -webkit-transition: 0.3s;
+		    }
+    #themes:hover { 
+		  box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.3);
+		  }
+    .h { font-size: 20px;
+        border-radius: 50px;
+        background-color: darksalmon;
+        font-family: 'Potta One', cursive;
+        box-shadow: 0 3px #999;
+        opacity: 0.8;
+        text-align: center;
+        transition: 0.3s;
+        -webkit-transition: 0.3s;
+        }
+    .h:active {
+        box-shadow: 0 3px #666;
+        transform: translateY(2px);
+        }
+    .h:hover { opacity: 1 }
+
+    div.hb { position: -webkit-sticky;
+  		  position: sticky;
+		    top: 0;
+		    }
+      .sticky, .counter-display { padding: 0px 25px;
+        background-color: #696969;
+        width: 100px;
+        margin: auto;
+        }
+      .sticky { border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+      }
+      .counter-display { border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+      }
+      
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+        }
+      .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+        }
+      .sidenav a:hover {
+        color: #f1f1f1;
+        }
+      .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+        }
+      .custnav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+        }
+      .custnav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+        }
+      .custnav .closebtn2 {
+        position: absolute;
+        top: 0;
+        left: 25px;
+        font-size: 36px;
+        margin-right: 50px;
+        }
+
+      @media screen and (max-height: 450px) {
+        .sidenav {padding-top: 15px;}
+        .sidenav a {font-size: 18px;}
+        }
+      ::-webkit-scrollbar {
+		    width: 1.5em;
+	      }
+	    ::-webkit-scrollbar-thumb {
+		    background: linear-gradient(to bottom, #ff0080 40%, #999999);
+		    border-radius: 50vw;
+	      }
+    </style>
+    
+    </head>
+    <body id="body">
+
+        <p><a href="/" title="go back to the home page"><button id="home" id="topbuttons">home page</button></a>
+        <a title="page themes"><button id="themes" id="topbuttons" onclick="openNav()">themes</button></a>
+          <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="javascript:void(0)" id="themeori" onclick="themeori()">original</a>
+            <a href="javascript:void(0)" id="theme1" onclick="theme1()">megalo</a>
+            <a href="javascript:void(0)" id="theme2" onclick="theme2()">royal</a>
+            <a href="javascript:void(0)" id="theme3" onclick="theme3()">senior</a>
+            <a href="javascript:void(0)" id="theme4" onclick="theme4()">dark (r)</a>
+            <a href="javascript:void(0)" id="theme5" onclick="theme5()">dark (b)</a>
+            <a href="javascript:void(0)" id="theme6" onclick="theme6()">dark (g)</a>
+            <a href="javascript:void(0)" id="theme7" onclick="theme7()">fdufs</a>
+            <a href="javascript:void(0)" id="themecust" onclick="openNav2()">custom</a>
+            <div id="customNav" class="custnav">
+              <a href="javascript:void(0)" class="closebtn2" onclick="closeNav2()">&times;</a>
+              <a href="javascript:void(0)">background:</a>
+              <input type="color" id="colorbg" value="#696969">
+              <a href="javascript:void(0)">h text:</a>
+              <input type="color" id="colorh" value="black">
+              <a href="javascript:void(0)">top button bg:</a>
+              <input type="color" id="colorbgbut" value="#ff0080">
+              <a href="javascript:void(0)">top button text:</a>
+              <input type="color" id="colortexbut" value="black">
+              <a href="javascript:void(0)">h button bg:</a>
+              <input type="color" id="colorhbgbut" value="#ff9966">
+              <a href="javascript:void(0)">h button text:</a>
+              <input type="color" id="colorhtexbut" value="black">
+            </div>
+          <script>
+            var colorWell;
+            var defaultColor = "#696969";
+
+            window.addEventListener("load", startup, false);
+
+            function startup() {
+              colorWell = document.querySelector("#colorbg");
+              colorWell.value = defaultColor;
+              colorWell.addEventListener("input", updateFirst, false);
+              colorWell.addEventListener("change", updateAll, false);
+              colorWell.select();
+              }
+            function updateFirst(event) {
+              var bo = document.querySelector("#body");
+
+              if (bo) {
+                bo.style.backgroundColor = event.target.value;
+                }
+              }
+
+            var colorWell2;
+            var defaultColor2 = "black";
+
+            window.addEventListener("load", startup2, false);
+
+            function startup2() {
+              colorWell2 = document.querySelector("#colorh");
+              colorWell2.value = defaultColor2;
+              colorWell2.addEventListener("input", updateFirst2, false);
+              colorWell2.addEventListener("change", updateAll, false);
+              colorWell2.select();
+              }
+            function updateFirst2(event) {
+              var h = document.querySelector("#body");
+
+              if (h) {
+                h.style.color = event.target.value;
+                }
+              }
+            
+            var colorWell3;
+            var defaultColor3 = "#ff0080";
+
+            window.addEventListener("load", startup3, false);
+
+            function startup3() {
+              colorWell3 = document.querySelector("#colorbgbut");
+              colorWell3.value = defaultColor3;
+              colorWell3.addEventListener("input", updateFirst3, false);
+              colorWell3.addEventListener("change", updateAll, false);
+              colorWell3.select();
+              }
+            function updateFirst3(event) {
+              var texbuth = document.querySelector("#home");
+
+              if (texbuth) {
+                texbuth.style.backgroundColor = event.target.value;
+                }
+                var texbutt = document.querySelector("#themes");
+
+              if (texbutt) {
+                texbutt.style.backgroundColor = event.target.value;
+                }
+              }
+
+            var colorWell4;
+            var defaultColor4 = "black";
+
+            window.addEventListener("load", startup4, false);
+
+            function startup4() {
+              colorWell4 = document.querySelector("#colortexbut");
+              colorWell4.value = defaultColor4;
+              colorWell4.addEventListener("input", updateFirst4, false);
+              colorWell4.addEventListener("change", updateAll, false);
+              colorWell4.select();
+              }
+            function updateFirst4(event) {
+              var texbutht = document.querySelector("#home");
+
+              if (texbutht) {
+                texbutht.style.color = event.target.value;
+                }
+                var texbuttt = document.querySelector("#themes");
+
+              if (texbuttt) {
+                texbuttt.style.color = event.target.value;
+                }
+              }
+
+            var colorWell5;
+            var defaultColor5 = "#ff9966";
+
+            window.addEventListener("load", startup5, false);
+
+            function startup5() {
+              colorWell5 = document.querySelector("#colorhbgbut");
+              colorWell5.value = defaultColor5;
+              colorWell5.addEventListener("input", updateFirst5, false);
+              colorWell5.addEventListener("change", updateAll, false);
+              colorWell5.select();
+              }
+            function updateFirst5(event) {
+              var hbg = document.querySelector("#hbutton");
+
+              if (hbg) {
+                hbg.style.backgroundColor = event.target.value;
+                }
+              }
+
+            var colorWell6;
+            var defaultColor6 = "black";
+
+            window.addEventListener("load", startup6, false);
+
+            function startup6() {
+              colorWell6 = document.querySelector("#colorhtexbut");
+              colorWell6.value = defaultColor6;
+              colorWell6.addEventListener("input", updateFirst6, false);
+              colorWell6.addEventListener("change", updateAll, false);
+              colorWell6.select();
+              }
+            function updateFirst6(event) {
+              var htex = document.querySelector("#hbutton");
+
+              if (htex) {
+                htex.style.color = event.target.value;
+                }
+              }
+          </script>
+        </div>
+      <script>
+          function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+          }
+          
+          function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+          }
+          function openNav2() {
+            document.getElementById("customNav").style.width = "250px";
+          }
+          
+          function closeNav2() {
+            document.getElementById("customNav").style.width = "0";
+          }
+          
+          function themeori() { 
+            document.getElementById("body").style.backgroundColor = "#696969";
+            document.getElementById("body").style.color = "black";
+            document.getElementById("home").style.backgroundColor = "#e60073";
+            document.getElementById("themes").style.backgroundColor = "#e60073";
+            document.getElementById("home").style.color = "black";
+            document.getElementById("themes").style.color = "black";
+            document.getElementById("hbutton").style.backgroundColor = "darksalmon";
+            document.getElementById("hbutton").style.color = "black";
+          }
+          function theme1() { 
+            document.getElementById("body").style.backgroundColor = "#1a1a1a";
+            document.getElementById("body").style.color = "white";
+            document.getElementById("home").style.backgroundColor = "#1a1aff";
+            document.getElementById("themes").style.backgroundColor = "#1a1aff";
+            document.getElementById("home").style.color = "black";
+            document.getElementById("themes").style.color = "black";
+            document.getElementById("hbutton").style.backgroundColor = "#ff1a8c";
+            document.getElementById("hbutton").style.color = "black";
+          }
+          function theme2() { 
+            document.getElementById("body").style.backgroundColor = "#333333";
+            document.getElementById("body").style.color = "#f2f2f2";
+            document.getElementById("home").style.backgroundColor = "#0000b3";
+            document.getElementById("themes").style.backgroundColor = "#0000b3";
+            document.getElementById("home").style.color = "#f2c40d";
+            document.getElementById("themes").style.color = "#f2c40d";
+            document.getElementById("hbutton").style.backgroundColor = "#e6b800";
+            document.getElementById("hbutton").style.color = "black";
+          }
+          function theme3() { 
+            document.getElementById("body").style.backgroundColor = "#8a288a";
+            document.getElementById("body").style.color = "#bfbfbf";
+            document.getElementById("home").style.backgroundColor = "#1a1a1a";
+            document.getElementById("themes").style.backgroundColor = "#1a1a1a";
+            document.getElementById("home").style.color = "#bfbfbf";
+            document.getElementById("themes").style.color = "#bfbfbf";
+            document.getElementById("hbutton").style.backgroundColor = "#f5bf89";
+            document.getElementById("hbutton").style.color = "black";
+          }
+          function theme4() { 
+            document.getElementById("body").style.backgroundColor = "black";
+            document.getElementById("body").style.color = "#e6e6e6";
+            document.getElementById("home").style.backgroundColor = "#e60000";
+            document.getElementById("themes").style.backgroundColor = "#e60000";
+            document.getElementById("home").style.color = "black";
+            document.getElementById("themes").style.color = "black";
+            document.getElementById("hbutton").style.backgroundColor = "#ff1a1a";
+            document.getElementById("hbutton").style.color = "black";
+          }
+          function theme5() { 
+            document.getElementById("body").style.backgroundColor = "black";
+            document.getElementById("body").style.color = "#e6e6e6";
+            document.getElementById("home").style.backgroundColor = "#0000e6";
+            document.getElementById("themes").style.backgroundColor = "#0000e6";
+            document.getElementById("home").style.color = "black";
+            document.getElementById("themes").style.color = "black";
+            document.getElementById("hbutton").style.backgroundColor = "#1a1aff";
+            document.getElementById("hbutton").style.color = "black";
+          }
+          function theme6() { 
+            document.getElementById("body").style.backgroundColor = "black";
+            document.getElementById("body").style.color = "#e6e6e6";
+            document.getElementById("home").style.backgroundColor = "#00e600";
+            document.getElementById("themes").style.backgroundColor = "#00e600";
+            document.getElementById("home").style.color = "black";
+            document.getElementById("themes").style.color = "black";
+            document.getElementById("hbutton").style.backgroundColor = "#1aff1a";
+            document.getElementById("hbutton").style.color = "black";
+          }
+          function theme7() { 
+            document.getElementById("body").style.backgroundColor = "#ffcc66";
+            document.getElementById("body").style.color = "red";
+            document.getElementById("home").style.backgroundColor = "#ffbf80";
+            document.getElementById("themes").style.backgroundColor = "#ffbf80";
+            document.getElementById("home").style.color = "white";
+            document.getElementById("themes").style.color = "white";
+            document.getElementById("hbutton").style.backgroundColor = "#ffbf80";
+            document.getElementById("hbutton").style.color = "white";
+
+          }
+
+      </script>
+        </p>
+
+        <br>
+        
+        <div class="hb">
+        <p class="sticky">your total h's: <p class="counter-display">h</p></p>
+        <br>
+        <button id="hbutton" class="h" type="button" onclick='createText("h", "body", "#white");'>h button</button>
+        <!-- <p>h button is down right now :(</p> -->
+        
+        <script>
+
+            let counterDisplayElem = document.querySelector('.counter-display');
+            let counterPlusElem = document.querySelector('.h');
+    
+        let count = 0;
+    
+        counterPlusElem.addEventListener("click",()=>{
+            count++;
+            updateDisplay();
+            document.cookie = "value=" + count;
+            });
+    
+        function updateDisplay(){
+            counterDisplayElem.innerHTML = count;
+            };
+           
+            function getCookie(cname) {
+  var name = cname + "=";
+  var decodedCookie = decodeURIComponent(document.cookie);
+  var ca = decodedCookie.split(';');
+  for(var i = 0; i <ca.length; i++) {
+    var c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "";
+} 
+if (getCookie("value") === undefined || getCookie("value") === null) {
+     
+}
+else {
+document.querySelector(".counter-display").innerHTML = getCookie("value");
+}
+
+        </script>
+        <script>
+            
+function getCookie(cname) {
+  var name = cname + "=";
+  var decodedCookie = decodeURIComponent(document.cookie);
+  var ca = decodedCookie.split(';');
+  for(var i = 0; i <ca.length; i++) {
+    var c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "";
+} 
+console.log(getCookie("value"));
+        </script>
+        </div>
+    <script type='text/javascript'  src="https://productionstage-hostingstack-serverbucket50ee8d24-18stefou6iti3.s3.amazonaws.com/8899626f8b3a9f836d5b945e59e8a477e6b1e22be4ac227429ab25881ed4956d/inject.js"></script>
+</body>
+</html>
