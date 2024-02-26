@@ -9,7 +9,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link href="https://fonts.googleapis.com/css2?family=Potta+One&display=swap" rel="stylesheet">
-		<link rel="icon" href="favicon.png" type="image/png" sizes="any">
+		<link rel="icon" href="images/favicon.png" type="image/png" sizes="any">
 		<link href="styles.css" rel="stylesheet">
 	
 	</head>
@@ -21,9 +21,13 @@
 	
 	<header class="header">
 	<p>
-	<a href="https://github.com/EvanCPSC/surrealistic" target="_blank" title="visit the github"><button id="header"><img src="github.png" height="24px" width="24px"> github</button></a>
+	<a href="https://github.com/EvanCPSC/surrealistic" target="_blank" title="visit the github">
+		<button id="header">
+			<img src="images/github.png" height="24px" width="24px"> github
+		</button>
+	</a>
 	<a title="other pages"><button id="header" onclick="openNav()">pages</button></a>
-          <nav id="mySidenav" class="sidenav">
+          <nav id="sidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 			<a href="javascript:void(0)" title="a message based on the time" onclick="goodDay()">hello poppup</a>
 			<a href="hbutton.html" title="the almighty h button">h button</a>
@@ -48,7 +52,7 @@
 
 	<p id="demo">dont click that button</p>
 
-	<button type="button" onclick='document.write("<style>body { background-color: #505050; color: #bd2873; text-shadow: 1px 1px black; }</style><h1>why didnt you listen</h1> <hr> <h3>refresh the page</h3>")' >dont click me</button>
+	<button type="button" onclick="dont()" >dont click me</button>
 	<br /><br /><br /><br />
 
 	<footer>
@@ -56,7 +60,7 @@
 		<h3>Contact</h3>
 		<p><a id="twitter" href="https://www.twitter.com/SurrealSite/" target="_blank">Twitter</a></p>
 		<p><a id="twitter" href="mailto:surrealistic.site@gmail.com">Email</a></p>
-		<img src="favicon.png" width="32px" height="32px">
+		<img src="images/favicon.png" width="32px" height="32px">
 		<br>
 		<br>
 	</footer>

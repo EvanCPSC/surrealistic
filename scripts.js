@@ -23,4 +23,7 @@ function openNav() {
         alert("good evening");
     }
 
+  }
+function dont() {
+    document.write("<style>body { background-color: #505050; color: #bd2873; text-shadow: 1px 1px black; }</style><h1>why didnt you listen</h1> <hr> <h3>refresh the page</h3>")
 }
