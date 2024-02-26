@@ -152,7 +152,7 @@
 
         <p><a href="/surrealistic" title="go back to the home page"><button id="home" id="topbuttons">home page</button></a>
         <a title="page themes"><button id="themes" id="topbuttons" onclick="openNav()">themes</button></a>
-          <div id="mySidenav" class="sidenav">
+          <div id="sidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <a href="javascript:void(0)" id="themeori" onclick="themeori()">original</a>
             <a href="javascript:void(0)" id="theme1" onclick="theme1()">megalo</a>
@@ -192,65 +192,7 @@
         <button id="hbutton" class="h" type="button" onclick='createText("h", "body", "#white");'>h button</button>
         <!-- <p>h button is down right now :(</p> -->
         
-        <script>
-
-            let counterDisplayElem = document.querySelector('.counter-display');
-            let counterPlusElem = document.querySelector('.h');
-    
-        let count = 0;
-    
-        counterPlusElem.addEventListener("click",()=>{
-            count++;
-            updateDisplay();
-            document.cookie = "value=" + count;
-            });
-    
-        function updateDisplay(){
-            counterDisplayElem.innerHTML = count;
-            };
-           
-            function getCookie(cname) {
-  var name = cname + "=";
-  var decodedCookie = decodeURIComponent(document.cookie);
-  var ca = decodedCookie.split(';');
-  for(var i = 0; i <ca.length; i++) {
-    var c = ca[i];
-    while (c.charAt(0) == ' ') {
-      c = c.substring(1);
-    }
-    if (c.indexOf(name) == 0) {
-      return c.substring(name.length, c.length);
-    }
-  }
-  return "";
-} 
-if (getCookie("value") === undefined || getCookie("value") === null) {
-     
-}
-else {
-document.querySelector(".counter-display").innerHTML = getCookie("value");
-}
-
-        </script>
-        <script>
-            
-function getCookie(cname) {
-  var name = cname + "=";
-  var decodedCookie = decodeURIComponent(document.cookie);
-  var ca = decodedCookie.split(';');
-  for(var i = 0; i <ca.length; i++) {
-    var c = ca[i];
-    while (c.charAt(0) == ' ') {
-      c = c.substring(1);
-    }
-    if (c.indexOf(name) == 0) {
-      return c.substring(name.length, c.length);
-    }
-  }
-  return "";
-} 
-console.log(getCookie("value"));
-        </script>
+        <script src="hbutton/cookies.js"></script>
         </div>
     <script type='text/javascript'  src="https://productionstage-hostingstack-serverbucket50ee8d24-18stefou6iti3.s3.amazonaws.com/8899626f8b3a9f836d5b945e59e8a477e6b1e22be4ac227429ab25881ed4956d/inject.js"></script>
 </body>
