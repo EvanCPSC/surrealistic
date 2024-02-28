@@ -1,7 +1,15 @@
+:root {
+    --spink: #e60073;
+    --spink2: #ac3973;
+    --sgray: #595959;
+    --sgray2: #3d3d3d;
+    --navgray: #111;
+    --hgray: #696969;
+}
 html {
     scroll-behavior: smooth;
     }
-body { background-color: #595959;
+body { background-color: var(--sgray);
     font-family: 'Potta One', cursive;
     text-align: center;
     background-position: center;
@@ -10,23 +18,23 @@ body { background-color: #595959;
     -webkit-transition: 0.3s;
     }
 h1 { font-size: 45px;
-    color: #e60073;
+    color: var(--spink);
     padding: 20px;
     text-shadow: 2px 1.5px black;
     }
 #logohome { border: 4px solid black;
     border-radius: 10px 25px;
     padding: 2px;
-    background-color: #3d3d3d;
+    background-color: var(--sgray2);
     }
-.info { color: #e60073;
+.info { color: var(--spink);
     font-size: 30px;
     text-shadow: 2px 2px black;
     }
 hr { border-width: 2px;
     width: 60%;
     }
-.header { background-color: #e60073;
+.header { background-color: var(--spink);
     border-radius: 8px;
     font-size: 20px;
     padding: 5px;
@@ -41,7 +49,7 @@ div#header { position: -webkit-sticky;
 .header:hover { 
     box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2);
     }
-footer { color: #595959;
+footer { color: var(--sgray);
     background-color: black;
     text-align: center;
     width: 100%;
@@ -49,19 +57,19 @@ footer { color: #595959;
     left: 0;
     }
 #twitter:link { 
-    color: #595959;
+    color: var(--sgray);
     text-decoration: none;
     }
 #twitter:visited { 
-    color: #595959;
+    color: var(--sgray);
     text-decoration: none;
     }
 #twitter:hover { 
-    color: #595959;
+    color: var(--sgray);
     text-decoration: underline;
     }
 #twitter:active { 
-    color: #424242;
+    color: var(--sgray2);
     text-decoration: underline;
     }
 .sidenav {
@@ -71,7 +79,7 @@ footer { color: #595959;
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #111;
+    background-color: var(--navgray);
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -80,12 +88,12 @@ footer { color: #595959;
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: #ac3973;
+    color: var(--spink2);
     display: block;
     transition: 0.3s;
     }
 .sidenav a:hover {
-    color: #f1f1f1;
+    color: white;
     }
 .sidenav .closebtn {
     position: absolute;
@@ -101,7 +109,7 @@ footer { color: #595959;
     z-index: 1;
     top: 0;
     right: 0;
-    background-color: #111;
+    background-color: var(--navgray);
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -110,7 +118,7 @@ footer { color: #595959;
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: #818181;
+    color: var(--sgray);
     display: block;
     transition: 0.3s;
     }
@@ -121,12 +129,12 @@ footer { color: #595959;
     font-size: 36px;
     margin-right: 50px;
     }
-    @media screen and (max-height: 450px) {
+@media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
     }
 .skipNav { position: absolute;
-    background-color: #cc0066;
+    background-color: var(--spink);
     border-radius: 0px 0px 10px 10px;
     padding: 5px;
     transform: translateY(-120%);
@@ -136,13 +144,13 @@ footer { color: #595959;
 .skipNav:focus {
     transform: translateY(0);
     }
-.update { color: #e60073;
-    background-color: #0f0f0f;
+.update { color: var(--spink);
+    background-color: black;
     margin: auto;
     padding: 50px;
     width: 50%;
     height: 300px;
-    border: 4px solid #ca0065;
+    border: 4px solid var(--spink2);
     border-radius: 10px;
     overflow: auto;
     }
@@ -150,7 +158,7 @@ footer { color: #595959;
     width: 1.5em;
     }
 ::-webkit-scrollbar-thumb {
-    background: linear-gradient(to bottom, #ff0080 40%, #999999);
+    background: linear-gradient(to bottom, var(--spink) 40%, var(--sgray));
     border-radius: 50vw;
     }
 .h { font-size: 20px;
@@ -173,13 +181,9 @@ div.hb { position: -webkit-sticky;
     top: 0;
     }
 .sticky, .counter-display { padding: 0px 25px;
-    background-color: #696969;
+    background-color: var(--hgray);
     width: 100px;
     margin: auto;
-    }
-.sticky { border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    }
-.counter-display { border-bottom-left-radius: 10px;
+    border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     }
