@@ -8,6 +8,7 @@
 }
 html {
     scroll-behavior: smooth;
+    font-size: 62.5%;
     }
 body { background-color: var(--sgray);
     font-family: 'Potta One', cursive;
@@ -17,46 +18,50 @@ body { background-color: var(--sgray);
     transition: 0.3s;
     -webkit-transition: 0.3s;
     }
-h1 { font-size: 45px;
+h1 { font-size: 4.5rem;
     color: var(--spink);
-    padding: 20px;
-    text-shadow: 2px 1.5px black;
+    padding: 2rem;
+    text-shadow: .2rem .15rem black;
     }
-#logohome { border: 4px solid black;
-    border-radius: 10px 25px;
-    padding: 2px;
+#logohome { border: .4rem solid black;
+    border-radius: 1rem 2.5rem;
+    padding: .2rem;
     background-color: var(--sgray2);
     }
 .info { color: var(--spink);
-    font-size: 30px;
-    text-shadow: 2px 2px black;
+    font-size: 3rem;
+    text-shadow: .2rem .2rem black;
     }
-hr { border-width: 2px;
+hr { border-width: .2rem;
     width: 60%;
     }
 .header { background-color: var(--spink);
-    border-radius: 8px;
-    font-size: 20px;
-    padding: 5px;
+    border-radius: .8rem;
+    font-size: 2rem;
+    padding: .5rem;
     font-family: 'Potta One', cursive;
     -webkit-transition: 0.3s;
     transition: 0.3s;
     }
 div#header { position: -webkit-sticky;
     position: sticky;
-    top: 5px;
+    top: .5rem;
     }
 .header:hover { 
-    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 .8rem 1.2rem 0 rgba(0,0,0,0.2);
     }
 footer { color: var(--sgray);
     background-color: black;
     text-align: center;
+    font-size: 1.6rem;
     width: 100%;
     position: absolute;
     left: 0;
     }
-#twitter:link { 
+#demo {
+    font-size: 1.6rem;
+}
+:link { 
     color: var(--sgray);
     text-decoration: none;
     }
@@ -82,12 +87,12 @@ footer { color: var(--sgray);
     background-color: var(--navgray);
     overflow-x: hidden;
     transition: 0.5s;
-    padding-top: 60px;
+    padding-top: 6rem;
     }
 .sidenav a {
-    padding: 8px 8px 8px 32px;
+    padding: .8rem .8rem .8rem 3.2rem;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 2.5rem;
     color: var(--spink2);
     display: block;
     transition: 0.3s;
@@ -98,9 +103,9 @@ footer { color: var(--sgray);
 .sidenav .closebtn {
     position: absolute;
     top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
+    right: 2.5rem;
+    font-size: 3.6rem;
+    margin-left: 5rem;
     }
 .custnav {
     height: 100%;
@@ -112,12 +117,12 @@ footer { color: var(--sgray);
     background-color: var(--navgray);
     overflow-x: hidden;
     transition: 0.5s;
-    padding-top: 60px;
+    padding-top: 6rem;
     }
 .custnav a {
-    padding: 8px 8px 8px 32px;
+    padding: .8rem .8rem .8rem 3.2rem;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 2.5rem;
     color: var(--sgray);
     display: block;
     transition: 0.3s;
@@ -125,20 +130,20 @@ footer { color: var(--sgray);
 .custnav .closebtn2 {
     position: absolute;
     top: 0;
-    left: 25px;
-    font-size: 36px;
-    margin-right: 50px;
+    left: 2.5rem;
+    font-size: 3.6rem;
+    margin-right: 5rem;
     }
 @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
+    .sidenav {padding-top: 1.5rem;}
+    .sidenav a {font-size: 1.8rem;}
     }
 .skipNav { position: absolute;
     background-color: var(--spink);
-    border-radius: 0px 0px 10px 10px;
-    padding: 5px;
+    border-radius: 0rem 0rem 1rem 1rem;
+    padding: .5rem;
     transform: translateY(-120%);
-    top: 0px; left: 5%;
+    top: 0rem; left: 5%;
     color: black;
     }
 .skipNav:focus {
@@ -147,43 +152,45 @@ footer { color: var(--sgray);
 .update { color: var(--spink);
     background-color: black;
     margin: auto;
-    padding: 50px;
+    font-size: 1.6rem;
+    padding: 5rem;
     width: 50%;
-    height: 300px;
-    border: 4px solid var(--spink2);
-    border-radius: 10px;
+    height: 30rem;
+    border: .4rem solid var(--spink2);
+    border-radius: 1rem;
     overflow: auto;
     }
 ::-webkit-scrollbar {
-    width: 1.5em;
+    width: 1em;
     }
 ::-webkit-scrollbar-thumb {
     background: linear-gradient(to bottom, var(--spink) 40%, var(--sgray));
     border-radius: 50vw;
     }
-.h { font-size: 20px;
-    border-radius: 50px;
+.h { font-size: 2rem;
+    border-radius: 5rem;
     background-color: darksalmon;
     font-family: 'Potta One', cursive;
-    box-shadow: 0 3px #999;
+    box-shadow: 0 .3rem #999;
     opacity: 0.8;
     text-align: center;
     transition: 0.3s;
     -webkit-transition: 0.3s;
     }
 .h:active {
-    box-shadow: 0 3px #666;
-    transform: translateY(2px);
+    box-shadow: 0 .3rem #666;
+    transform: translateY(.2rem);
     }
 .h:hover { opacity: 1 }
 div.hb { position: -webkit-sticky;
     position: sticky;
     top: 0;
     }
-.sticky, .counter-display { padding: 0px 25px;
+.sticky, .counter-display { padding: 0 2.5rem;
     background-color: var(--hgray);
-    width: 100px;
+    width: 10rem;
+    font-size: 1.6rem;
     margin: auto;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
     }
