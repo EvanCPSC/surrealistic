@@ -191,6 +191,12 @@ div.hb { position: -webkit-sticky;
     width: 10rem;
     font-size: 1.6rem;
     margin: auto;
+    }
+.sticky {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+.counter-display {
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
-    }
+}

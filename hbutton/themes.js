@@ -1,5 +1,5 @@
 function themeori() { 
-    document.getElementById("body").style.backgroundColor = "#696969";
+    document.getElementById("body").style.backgroundColor = "#595959";
     document.getElementById("body").style.color = "black";
     document.getElementById("home").style.backgroundColor = "#e60073";
     document.getElementById("themes").style.backgroundColor = "#e60073";
@@ -69,13 +69,22 @@ function themeori() {
     document.getElementById("hbutton").style.color = "black";
   }
   function theme7() { 
-    document.getElementById("body").style.backgroundColor = "#ffcc66";
-    document.getElementById("body").style.color = "red";
-    document.getElementById("home").style.backgroundColor = "#ffbf80";
-    document.getElementById("themes").style.backgroundColor = "#ffbf80";
-    document.getElementById("home").style.color = "white";
-    document.getElementById("themes").style.color = "white";
-    document.getElementById("hbutton").style.backgroundColor = "#ffbf80";
-    document.getElementById("hbutton").style.color = "white";
-
+    document.getElementById("body").style.backgroundColor = "#451111";
+    document.getElementById("body").style.color = "white";
+    document.getElementById("home").style.backgroundColor = "#f24568";
+    document.getElementById("themes").style.backgroundColor = "#f24568";
+    document.getElementById("home").style.color = "#eef773";
+    document.getElementById("themes").style.color = "#eef773";
+    document.getElementById("hbutton").style.backgroundColor = "#f96515";
+    document.getElementById("hbutton").style.color = "#ffcce7";
+  }
+  function theme8() { 
+    document.getElementById("body").style.backgroundColor = "#000442";
+    document.getElementById("body").style.color = "white";
+    document.getElementById("home").style.backgroundColor = "#22a7c9";
+    document.getElementById("themes").style.backgroundColor = "#22a7c9";
+    document.getElementById("home").style.color = "#400b75";
+    document.getElementById("themes").style.color = "#400b75";
+    document.getElementById("hbutton").style.backgroundColor = "#70ff66";
+    document.getElementById("hbutton").style.color = "#2b3626";
   }
